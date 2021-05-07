@@ -1,6 +1,6 @@
 "use strict";
 
-let counter = 10;
+let counter = 5;
 let countInterval;
 let buttons = ["rock", "paper", "scissors"];
 let playerOneResult;
@@ -98,7 +98,7 @@ socket.on("gameresults", (result, gameArr) => {
   $(".result").text(result);
   $(".result").show();
   setTimeout(() => {
-    // location.href = "/home.html";
+    location.href = "/home.html";
   }, 5000);
 });
 
