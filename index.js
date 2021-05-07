@@ -135,15 +135,15 @@ const options = {
   useFindAndModify: false,
 };
 
-mongoose
-  .connect(process.env.MONGODB_URI, options)
-  .then(() => {
+// mongoose
+  // .connect(process.env.MONGODB_URI, options)
+  // .then(() => {
     // Start the web server
-    console.log("connected to MongoDB....!!");
+    // console.log("connected to MongoDB....!!");
     server.listen(port, () => {
       console.log(`working on ${port}`);
     });
-  })
-  .catch((e) => {
-    throw new Error(e.message);
-  });
+  // })
+  // .catch((e) => {
+  //   throw new Error(e.message);
+  // });
