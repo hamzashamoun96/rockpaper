@@ -6,7 +6,7 @@ let buttons = ["rock", "paper", "scissors"];
 let playerOneResult;
 let playerTwoResult;
 
-const socket = io();
+const socket = io('https://rock2021.herokuapp.com/');
 
 const { username, room } = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
